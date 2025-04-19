@@ -1,23 +1,14 @@
-import logo from './logo.svg';
+import MessageList from './components/messageList';
+import MessageInput from './components/messageInput';
 import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <h1>AI 메시지 챗</h1>
+      <MessageList />
+      <MessageInput />
     </div>
   );
 }
