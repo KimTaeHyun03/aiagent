@@ -1,0 +1,16 @@
+# Node modules
+front/node_modules/
+back/build/
+*.log
+
+# IDE/Tool
+.vscode/
+.idea/
+
+# Environment
+.env
+.env.local
+
+# OS-specific
+.DS_Store
+Thumbs.db
