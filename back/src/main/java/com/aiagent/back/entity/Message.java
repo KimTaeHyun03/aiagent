@@ -15,4 +15,7 @@ public class Message {
 
     private String sender;
     private String content;
+
+    @Version
+    private Integer version; // 동시성 제어를 위한 버전 필드 추가
 }

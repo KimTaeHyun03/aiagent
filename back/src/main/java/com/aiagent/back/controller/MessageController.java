@@ -5,7 +5,8 @@ import com.aiagent.back.repository.MessageRepository;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+import org.springframework.transaction.annotation.Transactional;
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/api/message")
 public class MessageController {
@@ -17,6 +18,7 @@ public class MessageController {
     }
 
     @PostMapping
+    @Transactional
     public Message save(@RequestBody Message message) {
         return messageRepository.save(message);
     }

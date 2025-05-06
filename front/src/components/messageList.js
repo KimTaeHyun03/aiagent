@@ -9,13 +9,11 @@ const MessageList = () => {
     <div className='messageListContainer'>
       <ul>
         {messages.map((msg) => (
-          <li key={msg.id}>
+          <li key={msg.id}> {/* id를 key로 사용 */}
             <strong>{msg.sender}:</strong> {msg.content}
           </li>
         ))}
       </ul>
-      
-
     </div>
   );
 };
